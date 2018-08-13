@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      audio
+      {
+        /*display: block;*/
+
+        width:    600px;
+        margin:   2px;
+      }
+
+       div.audi {
+    width:460px;
+
+   /* background-color: red;*/
+    overflow: hidden;
+   /* direction: ltl;*/
+     }
+
+    </style> 
+  </head>
+  
+  <body>
+
+
+    <table border="1px">
+        <tr>
+            <td> 
+                <br>
+                Adelina 
+                <br>
+
+                <div class="audi">
+                    <audio controls id="Adelina" >
+                        <source src="Adelina.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+            </td>
+            
+            <td>
+                <br>
+                <br>
+        
+                <div>
+                    <input type="range" min="0" max="100" value="100" class="slider" id="myRange1" >
+                </div>
+            </td>
+        </tr>
+  
+
+
+          <tr>
+            <td> 
+                <br>
+                Saxofon 
+                <br>
+
+                <div class="audi">
+                    <audio controls id="Saxofon" >
+                        <source src="Saxofon.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+            </td>
+            
+            <td>
+                <br>
+                <br>
+        
+                <div>
+                    <input type="range" min="0" max="100" value="100" class="slider" id="myRange2" >
+                </div>
+            </td>
+        </tr>
+
+
+
+        <tr>
+            <td> 
+                <br>
+                UnPactoConDios 
+                <br>
+
+                <div class="audi">
+                    <audio controls id="UnPactoConDios" >
+                        <source src="UnPactoConDios.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+            </td>
+            
+            <td>
+                <br>
+                <br>
+        
+                <div>
+                    <input type="range" min="0" max="100" value="100" class="slider" id="myRange3" >
+                </div>
+            </td>
+        </tr>
+
+
+
+        <tr>
+            <td> 
+                <br>
+                EntradaNovio 
+                <br>
+
+                <div class="audi">
+                    <audio controls id="EntradaNovio" >
+                        <source src="EntradaNovio.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+            </td>
+            
+            <td>
+                <br>
+                <br>
+        
+                <div>
+                    <input type="range" min="0" max="100" value="100" class="slider" id="myRange4" >
+                </div>
+            </td>
+        </tr>
+
+
+
+        <tr>
+            <td> 
+                <br>
+                GrabacionNovio 
+                <br>
+
+                <div class="audi">
+                    <audio controls id="GrabacionNovio" >
+                        <source src="GrabacionNovio.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+            </td>
+            
+            <td>
+                <br>
+                <br>
+        
+                <div>
+                    <input type="range" min="0" max="100" value="100" class="slider" id="myRange5" >
+                </div>
+            </td>
+        </tr>
+
+
+
+        <tr>
+            <td> 
+                <br>
+                EntradaNinos 
+                <br>
+
+                <div class="audi">
+                    <audio controls id="EntradaNinos" >
+                        <source src="EntradaNinos.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+            </td>
+            
+            <td>
+                <br>
+                <br>
+        
+                <div>
+                    <input type="range" min="0" max="100" value="100" class="slider" id="myRange6" >
+                </div>
+            </td>
+        </tr>
+
+
+
+        <tr>
+            <td> 
+                <br>
+                EntradaNovia 
+                <br>
+
+                <div class="audi">
+                    <audio controls id="EntradaNovia" >
+                        <source src="EntradaNovia.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+            </td>
+            
+            <td>
+                <br>
+                <br>
+        
+                <div>
+                    <input type="range" min="0" max="100" value="100" class="slider" id="myRange7" >
+                </div>
+            </td>
+        </tr>
+
+
+
+        <tr>
+            <td> 
+                <br>
+                GrabacionNovia 
+                <br>
+
+                <div class="audi">
+                    <audio controls id="GrabacionNovia" >
+                        <source src="GrabacionNovia.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+            </td>
+            
+            <td>
+                <br>
+                <br>
+        
+                <div>
+                    <input type="range" min="0" max="100" value="100" class="slider" id="myRange8" >
+                </div>
+            </td>
+        </tr>
+                                       
+</table>
+    
+   
+
+  
+
+ 
+
+
+
+<script> 
+var Adelina = document.getElementById("Adelina"); 
+var Saxofon = document.getElementById("Saxofon"); 
+var UnPactoConDios = document.getElementById("UnPactoConDios"); 
+var EntradaNovio = document.getElementById("EntradaNovio"); 
+
+var GrabacionNovio = document.getElementById("GrabacionNovio"); 
+var EntradaNinos = document.getElementById("EntradaNinos"); 
+var EntradaNovia = document.getElementById("EntradaNovia"); 
+var GrabacionNovia = document.getElementById("GrabacionNovia"); 
+
+
+Adelina.onplay = function() {
+	
+	Saxofon.pause(); 
+    UnPactoConDios.pause(); 
+    EntradaNovio.pause(); 
+    GrabacionNovio.pause(); 
+    EntradaNinos.pause(); 
+    EntradaNovia.pause(); 
+    GrabacionNovia.pause(); 
+ };   
+
+
+Saxofon.onplay = function() {
+	Adelina.pause(); 
+
+    UnPactoConDios.pause(); 
+    EntradaNovio.pause(); 
+    GrabacionNovio.pause(); 
+    EntradaNinos.pause(); 
+    EntradaNovia.pause(); 
+    GrabacionNovia.pause(); 
+ };   
+
+
+UnPactoConDios.onplay = function() {
+	Adelina.pause(); 
+	Saxofon.pause(); 
+    
+    EntradaNovio.pause(); 
+    GrabacionNovio.pause(); 
+    EntradaNinos.pause(); 
+    EntradaNovia.pause(); 
+    GrabacionNovia.pause(); 
+ };   
+
+
+EntradaNovio.onplay = function() {
+	Adelina.pause(); 
+	Saxofon.pause(); 
+    UnPactoConDios.pause(); 
+    
+    GrabacionNovio.pause(); 
+    EntradaNinos.pause(); 
+    EntradaNovia.pause(); 
+    GrabacionNovia.pause(); 
+ };   
+
+
+GrabacionNovio.onplay = function() {
+	
+ };   
+
+
+EntradaNinos.onplay = function() {
+	Adelina.pause(); 
+	Saxofon.pause(); 
+    UnPactoConDios.pause(); 
+    EntradaNovio.pause(); 
+    GrabacionNovio.pause(); 
+    
+    EntradaNovia.pause(); 
+    GrabacionNovia.pause(); 
+ };   
+
+
+EntradaNovia.onplay = function() {
+	Adelina.pause(); 
+	Saxofon.pause(); 
+    UnPactoConDios.pause(); 
+    EntradaNovio.pause(); 
+    GrabacionNovio.pause(); 
+    EntradaNinos.pause(); 
+    
+    GrabacionNovia.pause(); 
+ };   
+
+
+GrabacionNovia.onplay = function() {
+
+ };   
+
+
+
+
+myRange1.oninput = function() {
+  //output.innerHTML = this.value;
+   Adelina.volume = this.value/100;
+  
+} 
+
+
+myRange2.oninput = function() {
+  //output.innerHTML = this.value;
+   Saxofon.volume = this.value/100;
+  
+} 
+
+myRange3.oninput = function() {
+  //output.innerHTML = this.value;
+   UnPactoConDios.volume = this.value/100;
+  
+} 
+
+myRange4.oninput = function() {
+  //output.innerHTML = this.value;
+   EntradaNovio.volume = this.value/100;
+  
+} 
+
+myRange5.oninput = function() {
+  //output.innerHTML = this.value;
+   GrabacionNovio.volume = this.value/100;
+  
+} 
+
+myRange6.oninput = function() {
+  //output.innerHTML = this.value;
+   EntradaNinos.volume = this.value/100;
+  
+} 
+
+myRange7.oninput = function() {
+  //output.innerHTML = this.value;
+   EntradaNovia.volume = this.value/100;
+  
+} 
+
+myRange8.oninput = function() {
+  //output.innerHTML = this.value;
+   GrabacionNovia.volume = this.value/100;
+  
+} 
+
+
+   /* */
+
+
+
+/*
+Adelina
+Saxofon
+UnPactoConDios
+EntradaNovio
+GrabacionNovio
+EntradaNinos
+EntradaNovia
+GrabacionNovia
+*/
+/*
+function playVid() { 
+    vid.play(); 
+} 
+
+function pauseVid() { 
+    vid.pause(); 
+} */
+</script> 
+
+
+</body>
+</html>
